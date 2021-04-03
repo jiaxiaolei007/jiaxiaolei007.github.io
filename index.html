@@ -224,7 +224,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 15:48:47 / 修改时间：16:44:22" itemprop="dateCreated datePublished" datetime="2021-04-03T15:48:47+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-03 15:48:47 / 修改时间：16:45:42" itemprop="dateCreated datePublished" datetime="2021-04-03T15:48:47+08:00">2021-04-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -246,16 +246,31 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Mustache语法"><a href="#Mustache语法" class="headerlink" title="Mustache语法"></a>Mustache语法</h1><p>上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.</p>
+          <span id="more"></span>
+
+<h1 id="Mustache语法"><a href="#Mustache语法" class="headerlink" title="Mustache语法"></a>Mustache语法</h1><p>上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.</p>
 <p>同时，我们也可以像下面这样使用，并且数据是响应式的：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;,李银河&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+&#39; &#39;+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName&#125;&#125; &#123;&#123;lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;counter*2&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">   const app&#x3D;new Vue(&#123;</span><br><span class="line">     el:&quot;#app&quot;,</span><br><span class="line">     data:&#123;</span><br><span class="line">       message:&quot;你好！&quot;,</span><br><span class="line">       firstName:&quot;Kobe&quot;,</span><br><span class="line">       lastName:&quot;bryant&quot;,</span><br><span class="line">       counter:100,</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="v-once指令的使用"><a href="#v-once指令的使用" class="headerlink" title="v-once指令的使用"></a>v-once指令的使用</h1><p>但是，在某些情况下，我们可能不希望界面随意的跟随着数据的改变而变化，这个时候我们就可以用vue的指令；</p>
+<p>该指令后面不需要跟任何表达式（v-for后面是需要跟表达式的），该指令表示元素和组件只会渲染一次，不会随着数据的改变而改变。</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-once&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;)</span><br><span class="line"> &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="v-html指令的使用"><a href="#v-html指令的使用" class="headerlink" title="v-html指令的使用"></a>v-html指令的使用</h1><p>某些情况下，我们从服务器请求到的数据本身就是一个HTML代码，如果我们直接通过Mustache来输出，会将HTML代码也跟着一起输出，但是我们需要的是按照HTML代码解析后显示相应的内容，这个时候我们可以用v-html。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;url&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-html&#x3D;&quot;url&quot;&gt;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      message: &quot;你好！&quot;,</span><br><span class="line">      url: &quot;&lt;a href&#x3D;http:&#x2F;&#x2F;www.baidu.com&gt;百度一下&lt;&#x2F;a&gt;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="v-text指令的使用"><a href="#v-text指令的使用" class="headerlink" title="v-text指令的使用"></a>v-text指令的使用</h1><p>v-text作用和Mustache一致，通常情况下，它接受一个String类型的字符串。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-text&#x3D;&quot;message&quot;&gt;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="v-pre指令的使用"><a href="#v-pre指令的使用" class="headerlink" title="v-pre指令的使用"></a>v-pre指令的使用</h1><p>v-pre用于跳过这个元素和它子元素的编译过程，用于显示原本的内容，比如下面的代码:</p>
+<p>第一个h2元素中的内容会被编译解析出来对应的内容；第二个h2元素会直接显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-pre&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="v-cloak指令的使用"><a href="#v-cloak指令的使用" class="headerlink" title="v-cloak指令的使用"></a>v-cloak指令的使用</h1><p>某些情况下，浏览器可能会直接显示出未编译的Mustache语法，这个时候我们可以使用v-cloak在编译之前使页面显示为空白，代码如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    [v-cloak]&#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2 v-cloak&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  &#x2F;&#x2F;在vue解析之前，h2中有一个属性v-cloak</span><br><span class="line">  &#x2F;&#x2F;在vue解析之后，h2中没有属性v-cloak</span><br><span class="line">  setTimeout(function ()&#123;</span><br><span class="line">    const app&#x3D;new Vue(&#123;</span><br><span class="line">      el:&quot;#app&quot;,</span><br><span class="line">      data:&#123;</span><br><span class="line">        message:&quot;你好！&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,1000)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
 
@@ -306,7 +321,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 14:19:53 / 修改时间：16:44:36" itemprop="dateCreated datePublished" datetime="2021-04-03T14:19:53+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-03 14:19:53 / 修改时间：16:45:55" itemprop="dateCreated datePublished" datetime="2021-04-03T14:19:53+08:00">2021-04-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -328,16 +343,42 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="Vue的编程范式"><a href="#Vue的编程范式" class="headerlink" title="Vue的编程范式"></a>Vue的编程范式</h1><p>vue的编程范式为声明式编程，什么是声明式编程呢？在这里我们做一个案例，来对声明式编程和命令式编程做一个区分：</p>
+          <span id="more"></span>
+
+<h1 id="Vue的编程范式"><a href="#Vue的编程范式" class="headerlink" title="Vue的编程范式"></a>Vue的编程范式</h1><p>vue的编程范式为声明式编程，什么是声明式编程呢？在这里我们做一个案例，来对声明式编程和命令式编程做一个区分：</p>
 <p>我们首先创建了一个Vue实例，并将其挂载在一个盒子上，之后我们声明了两个变量，然后利用Mustache语法将其在盒子中显示出来。在这里，我们只是做了两个变量的声明，并没有做什么其他的事情，就可以直让文字显示出来。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/03/vue%E7%AC%AC%E4%B8%80%E5%A4%A9/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123;name&#125;&#125;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    &#x2F;&#x2F; let(变量)&#x2F;const(常量)</span><br><span class="line">    &#x2F;&#x2F; 编程范式: 声明式编程</span><br><span class="line">    const app &#x3D; new Vue(&#123;</span><br><span class="line">        el: &#39;#app&#39;, &#x2F;&#x2F; 用于挂载要管理的元素</span><br><span class="line">        data: &#123; &#x2F;&#x2F; 定义数据</span><br><span class="line">            message: &#39;你好啊,李银河!&#39;,</span><br><span class="line">            name: &#39;coderwhy&#39;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>如果我们采用原生js(编程范式: 命令式编程)的做法，需要如下步骤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">元素js的做法(编程范式: 命令式编程)</span><br><span class="line">1.创建div元素,设置id属性</span><br><span class="line"></span><br><span class="line">2.定义一个变量叫message</span><br><span class="line"></span><br><span class="line">3.将message变量放在前面的div元素中显示</span><br></pre></td></tr></table></figure>
+
+<p>同时，如果我们想修改文字，那么我们需要做一下事情：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">4.修改message的数据: 今天天气不错!</span><br><span class="line"></span><br><span class="line">5.将修改后的数据再次替换到div元素</span><br></pre></td></tr></table></figure>
+
+<p>可见，Vue的这种编程范式似乎更加“智能”！</p>
+<h1 id="Vue的响应式"><a href="#Vue的响应式" class="headerlink" title="Vue的响应式"></a>Vue的响应式</h1><p>我们来做我们的第一个Vue程序，体验一下Vue的响应式</p>
+<p>如下所示，创建Vue对象的时候，传入了一些options：{}</p>
+<p>​    {}中包含了el属性：该属性决定了这个Vue对象挂载到哪一个元素上，很明显，我们这里是挂载到了id为app的元素上；</p>
+<p>​    {}中包含了data属性：该属性中通常会存储一些数据；这些数据可以是我们直接定义出来的，比如像上面这样。</p>
+<p>也可能是来自网络，从服务器加载的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    const app &#x3D; new Vue(&#123;</span><br><span class="line">        el: &#39;#app&#39;, &#x2F;&#x2F; 用于挂载要管理的元素</span><br><span class="line">        data: &#123; &#x2F;&#x2F; 定义数据</span><br><span class="line">            message: &#39;你好啊,李银河!&#39;,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>​    浏览器首先执行代码显示出对应的HTML，之后执行到js代码创建Vue实例，并且对原HTML进行解析和修改。</p>
+<h1 id="Vue的MVVM"><a href="#Vue的MVVM" class="headerlink" title="Vue的MVVM"></a>Vue的MVVM</h1><img src="C:\Users\Jay\AppData\Roaming\Typora\typora-user-images\image-20210403151119611.png" alt="image-20210403151119611" style="zoom:70%;" />
+
+<p><strong>View层：</strong></p>
+<p>1 <em>视图层</em></p>
+<p>2 <em>在我们前端开发中，通常就是DOM层。</em></p>
+<p>3 <em>主要的作用是给用户展示各种信息。</em></p>
+<p><strong>Model层</strong>：</p>
+<p><em>1数据层</em></p>
+<p><em>2数据可能是我们固定的死数据，更多的是来自我们服务器，从网络上请求下来的数据。</em></p>
+<p><strong>VueModel层：</strong></p>
+<p><em>1视图模型层</em></p>
+<p><em>2视图模型层是View和Model沟通的桥梁。</em></p>
+<p><em>3一方面它实现了Data Binding，也就是数据绑定，将Model的改变实时的反应到View中</em></p>
+<p><em>4另一方面它实现了DOM Listener，也就是DOM监听，当DOM发生一些事件(点击、滚动、touch等)时，可以监听到，并在需要的情况下改变对应的Data。</em></p>
+
       
     </div>
 
