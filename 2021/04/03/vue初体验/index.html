@@ -20,18 +20,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;jiaxiaolei007.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:true,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta name="description" content="鸣蝉的夏季 我想遇见你">
+<meta name="description" content="**Vue的编程范式vue的编程范式为声明式编程，什么是声明式编程呢？在这里我们做一个案例，来对声明式编程和命令式编程做一个区分： 我们首先创建了一个Vue实例，并将其挂载在一个盒子上，之后我们声明了两个变量，然后利用Mustache语法将其在盒子中显示出来。在这里，我们只是做了两个变量的声明，并没有做什么其他的事情，就可以直让文字显示出来。 1234567891011121314151617&amp;l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue初体验">
+<meta property="og:title" content="vue第一天">
 <meta property="og:url" content="https://jiaxiaolei007.github.io/2021/04/03/vue%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="loveJay">
-<meta property="og:description" content="鸣蝉的夏季 我想遇见你">
+<meta property="og:description" content="**Vue的编程范式vue的编程范式为声明式编程，什么是声明式编程呢？在这里我们做一个案例，来对声明式编程和命令式编程做一个区分： 我们首先创建了一个Vue实例，并将其挂载在一个盒子上，之后我们声明了两个变量，然后利用Mustache语法将其在盒子中显示出来。在这里，我们只是做了两个变量的声明，并没有做什么其他的事情，就可以直让文字显示出来。 1234567891011121314151617&amp;l">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:/Users/Jay/AppData/Roaming/Typora/typora-user-images/image-20210403151119611.png">
 <meta property="article:published_time" content="2021-04-03T06:19:53.000Z">
-<meta property="article:modified_time" content="2021-04-03T06:30:49.592Z">
+<meta property="article:modified_time" content="2021-04-03T07:16:41.382Z">
 <meta property="article:author" content="Jia">
 <meta property="article:tag" content="vue">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Jay/AppData/Roaming/Typora/typora-user-images/image-20210403151119611.png">
 
 
 <link rel="canonical" href="https://jiaxiaolei007.github.io/2021/04/03/vue%E5%88%9D%E4%BD%93%E9%AA%8C/">
@@ -41,7 +43,7 @@
 <meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
 <meta name="hexo-config-calendar" content="">
 <script data-pjax src="/js/load-config.js"></script>
-  <title>vue初体验 | loveJay</title>
+  <title>vue第一天 | loveJay</title>
   
 
 
@@ -109,7 +111,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -121,6 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F"><span class="nav-text">**Vue的编程范式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue%E7%9A%84MVVM"><span class="nav-text">Vue的MVVM</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -136,7 +139,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -216,7 +219,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vue初体验
+          vue第一天
         </h1>
 
         <div class="post-meta-container">
@@ -228,7 +231,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 14:19:53 / 修改时间：14:30:49" itemprop="dateCreated datePublished" datetime="2021-04-03T14:19:53+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-03 14:19:53 / 修改时间：15:16:41" itemprop="dateCreated datePublished" datetime="2021-04-03T14:19:53+08:00">2021-04-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -236,7 +239,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF-Vue/" itemprop="url" rel="index"><span itemprop="name">前端  Vue</span></a>
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
         </span>
     </span>
 
@@ -250,7 +253,41 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="Vue的编程范式"><a href="#Vue的编程范式" class="headerlink" title="**Vue的编程范式"></a>**Vue的编程范式</h1><p>vue的编程范式为声明式编程，什么是声明式编程呢？在这里我们做一个案例，来对声明式编程和命令式编程做一个区分：</p>
+<p>我们首先创建了一个Vue实例，并将其挂载在一个盒子上，之后我们声明了两个变量，然后利用Mustache语法将其在盒子中显示出来。在这里，我们只是做了两个变量的声明，并没有做什么其他的事情，就可以直让文字显示出来。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">&quot;app&quot;</span>&gt;</span><br><span class="line">    &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;/h2&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123;name&#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div&gt;&#123;&#123;message&#125;&#125;&lt;/div&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;../js/vue.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="comment">// let(变量)/const(常量)</span></span><br><span class="line">    <span class="comment">// 编程范式: 声明式编程</span></span><br><span class="line">    <span class="keyword">const</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">        el: <span class="string">&#x27;#app&#x27;</span>, <span class="comment">// 用于挂载要管理的元素</span></span><br><span class="line">        data: &#123; <span class="comment">// 定义数据</span></span><br><span class="line">            message: <span class="string">&#x27;你好啊,李银河!&#x27;</span>,</span><br><span class="line">            name: <span class="string">&#x27;coderwhy&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>如果我们采用原生js(编程范式: 命令式编程)的做法，需要如下步骤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">元素js的做法(编程范式: 命令式编程)</span><br><span class="line">1.创建div元素,设置id属性</span><br><span class="line"></span><br><span class="line">2.定义一个变量叫message</span><br><span class="line"></span><br><span class="line">3.将message变量放在前面的div元素中显示</span><br></pre></td></tr></table></figure>
+
+<p>同时，如果我们想修改文字，那么我们需要做一下事情：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">4.修改message的数据: 今天天气不错!</span><br><span class="line"></span><br><span class="line">5.将修改后的数据再次替换到div元素</span><br></pre></td></tr></table></figure>
+
+<p>可见，Vue的这种编程范式似乎更加“智能”！</p>
+<p>Vue的响应式</p>
+<p>我们来做我们的第一个Vue程序，体验一下Vue的响应式</p>
+<p>如下所示，创建Vue对象的时候，传入了一些options：{}</p>
+<p>​    {}中包含了el属性：该属性决定了这个Vue对象挂载到哪一个元素上，很明显，我们这里是挂载到了id为app的元素上；</p>
+<p>​    {}中包含了data属性：该属性中通常会存储一些数据；这些数据可以是我们直接定义出来的，比如像上面这样。</p>
+<p>也可能是来自网络，从服务器加载的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    const app &#x3D; new Vue(&#123;</span><br><span class="line">        el: &#39;#app&#39;, &#x2F;&#x2F; 用于挂载要管理的元素</span><br><span class="line">        data: &#123; &#x2F;&#x2F; 定义数据</span><br><span class="line">            message: &#39;你好啊,李银河!&#39;,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>​    浏览器首先执行代码显示出对应的HTML，之后执行到js代码创建Vue实例，并且对原HTML进行解析和修改。</p>
+<h1 id="Vue的MVVM"><a href="#Vue的MVVM" class="headerlink" title="Vue的MVVM"></a>Vue的MVVM</h1><img src="C:\Users\Jay\AppData\Roaming\Typora\typora-user-images\image-20210403151119611.png" alt="image-20210403151119611" style="zoom:70%;" />
+
+<p><strong>View层：</strong></p>
+<p>1 <em>视图层</em></p>
+<p>2 <em>在我们前端开发中，通常就是DOM层。</em></p>
+<p>3 <em>主要的作用是给用户展示各种信息。</em></p>
+<p><strong>Model层</strong>：</p>
+<p><em>1数据层</em></p>
+<p><em>2数据可能是我们固定的死数据，更多的是来自我们服务器，从网络上请求下来的数据。</em></p>
+<p><strong>VueModel层：</strong></p>
+<p><em>1视图模型层</em></p>
+<p><em>2视图模型层是View和Model沟通的桥梁。</em></p>
+<p><em>3一方面它实现了Data Binding，也就是数据绑定，将Model的改变实时的反应到View中</em></p>
+<p><em>4另一方面它实现了DOM Listener，也就是DOM监听，当DOM发生一些事件(点击、滚动、touch等)时，可以监听到，并在需要的情况下改变对应的Data。</em></p>
+
     </div>
 
     
@@ -267,7 +304,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://jiaxiaolei007.github.io/2021/04/03/vue%E5%88%9D%E4%BD%93%E9%AA%8C/" title="vue初体验">https://jiaxiaolei007.github.io/2021/04/03/vue初体验/</a>
+      <a href="https://jiaxiaolei007.github.io/2021/04/03/vue%E5%88%9D%E4%BD%93%E9%AA%8C/" title="vue第一天">https://jiaxiaolei007.github.io/2021/04/03/vue初体验/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -298,15 +335,6 @@
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/04/03/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" rel="prev" title="七里香">
-                  <i class="fa fa-chevron-left"></i> 七里香
-                </a>
-            </div>
-            <div class="post-nav-item">
-            </div>
-          </div>
     </footer>
   </article>
 </div>
