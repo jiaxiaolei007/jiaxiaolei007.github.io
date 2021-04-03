@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;jiaxiaolei007.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:true,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta name="description" content="前面我们学习的指令主要是将值插入我们的模板中，但是，除了内容需要动态决定以外，某些属性我们也希望动态绑定，不如动态绑定a的href以及img的src属性。 v-bind指令的基本使用这个时候，我们可以使用v-bind指令，它用于绑定一个或者多个属性，或者向另一个组件传递props值； 在实际的开发中，哪些地方需要动态绑定呢？ 其实，很多地方都需要，例如图片的链接src，网站的链接href，动态绑定">
+<meta name="description" content="前面我们学习的指令主要是将值插入我们的模板中，但是，除了内容需要动态决定以外，某些属性我们也希望动态绑定，不如动态绑定a的href以及img的src属性。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue绑定属性">
 <meta property="og:url" content="https://jiaxiaolei007.github.io/2021/04/03/vue%E7%AC%AC%E4%B8%89%E5%A4%A9/index.html">
 <meta property="og:site_name" content="loveJay">
-<meta property="og:description" content="前面我们学习的指令主要是将值插入我们的模板中，但是，除了内容需要动态决定以外，某些属性我们也希望动态绑定，不如动态绑定a的href以及img的src属性。 v-bind指令的基本使用这个时候，我们可以使用v-bind指令，它用于绑定一个或者多个属性，或者向另一个组件传递props值； 在实际的开发中，哪些地方需要动态绑定呢？ 其实，很多地方都需要，例如图片的链接src，网站的链接href，动态绑定">
+<meta property="og:description" content="前面我们学习的指令主要是将值插入我们的模板中，但是，除了内容需要动态决定以外，某些属性我们也希望动态绑定，不如动态绑定a的href以及img的src属性。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-03T09:19:53.000Z">
-<meta property="article:modified_time" content="2021-04-03T09:32:23.143Z">
+<meta property="article:modified_time" content="2021-04-03T09:33:18.098Z">
 <meta property="article:author" content="Jia">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
@@ -229,7 +229,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 17:19:53 / 修改时间：17:32:23" itemprop="dateCreated datePublished" datetime="2021-04-03T17:19:53+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-03 17:19:53 / 修改时间：17:33:18" itemprop="dateCreated datePublished" datetime="2021-04-03T17:19:53+08:00">2021-04-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -252,6 +252,8 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>前面我们学习的指令主要是将值插入我们的模板中，但是，除了内容需要动态决定以外，某些属性我们也希望动态绑定，不如动态绑定a的href以及img的src属性。</p>
+<span id="more"></span>
+
 <h1 id="v-bind指令的基本使用"><a href="#v-bind指令的基本使用" class="headerlink" title="v-bind指令的基本使用"></a>v-bind指令的基本使用</h1><p>这个时候，我们可以使用v-bind指令，它用于绑定一个或者多个属性，或者向另一个组件传递props值；</p>
 <p>在实际的开发中，哪些地方需要动态绑定呢？</p>
 <p>其实，很多地方都需要，例如图片的链接src，网站的链接href，动态绑定一些类等等，代码如下：</p>
