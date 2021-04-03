@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;jiaxiaolei007.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:true,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta name="description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML. 同时，我们也可以像下面这样使用，并且数据是响应式的： 12345678910111213141516171819&lt;div id&#x3D;&quot;app&quot;&gt;  &lt;h2&gt;&amp;#123;&amp;#123;message&amp;#125;&amp;#125;&lt;&#x2F;">
+<meta name="description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML. 同时，我们也可以像下面这样使用，并且数据是响应式的：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue插值操作">
 <meta property="og:url" content="https://jiaxiaolei007.github.io/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/index.html">
 <meta property="og:site_name" content="loveJay">
-<meta property="og:description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML. 同时，我们也可以像下面这样使用，并且数据是响应式的： 12345678910111213141516171819&lt;div id&#x3D;&quot;app&quot;&gt;  &lt;h2&gt;&amp;#123;&amp;#123;message&amp;#125;&amp;#125;&lt;&#x2F;">
+<meta property="og:description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML. 同时，我们也可以像下面这样使用，并且数据是响应式的：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-03T07:48:47.000Z">
-<meta property="article:modified_time" content="2021-04-03T08:43:08.170Z">
+<meta property="article:modified_time" content="2021-04-03T08:44:22.217Z">
 <meta property="article:author" content="Jia">
 <meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
@@ -229,7 +229,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 15:48:47 / 修改时间：16:43:08" itemprop="dateCreated datePublished" datetime="2021-04-03T15:48:47+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-03 15:48:47 / 修改时间：16:44:22" itemprop="dateCreated datePublished" datetime="2021-04-03T15:48:47+08:00">2021-04-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -253,6 +253,8 @@
     <div class="post-body" itemprop="articleBody">
         <h1 id="Mustache语法"><a href="#Mustache语法" class="headerlink" title="Mustache语法"></a>Mustache语法</h1><p>上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.</p>
 <p>同时，我们也可以像下面这样使用，并且数据是响应式的：</p>
+<span id="more"></span>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;,李银河&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+&#39; &#39;+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName&#125;&#125; &#123;&#123;lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;counter*2&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">   const app&#x3D;new Vue(&#123;</span><br><span class="line">     el:&quot;#app&quot;,</span><br><span class="line">     data:&#123;</span><br><span class="line">       message:&quot;你好！&quot;,</span><br><span class="line">       firstName:&quot;Kobe&quot;,</span><br><span class="line">       lastName:&quot;bryant&quot;,</span><br><span class="line">       counter:100,</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
 <h1 id="v-once指令的使用"><a href="#v-once指令的使用" class="headerlink" title="v-once指令的使用"></a>v-once指令的使用</h1><p>但是，在某些情况下，我们可能不希望界面随意的跟随着数据的改变而变化，这个时候我们就可以用vue的指令；</p>
@@ -273,7 +275,7 @@
 <h1 id="v-cloak指令的使用"><a href="#v-cloak指令的使用" class="headerlink" title="v-cloak指令的使用"></a>v-cloak指令的使用</h1><p>某些情况下，浏览器可能会直接显示出未编译的Mustache语法，这个时候我们可以使用v-cloak在编译之前使页面显示为空白，代码如下所示：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    [v-cloak]&#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2 v-cloak&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  &#x2F;&#x2F;在vue解析之前，h2中有一个属性v-cloak</span><br><span class="line">  &#x2F;&#x2F;在vue解析之后，h2中没有属性v-cloak</span><br><span class="line">  setTimeout(function ()&#123;</span><br><span class="line">    const app&#x3D;new Vue(&#123;</span><br><span class="line">      el:&quot;#app&quot;,</span><br><span class="line">      data:&#123;</span><br><span class="line">        message:&quot;你好！&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,1000)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
-<span id="more"></span>
+
     </div>
 
     
