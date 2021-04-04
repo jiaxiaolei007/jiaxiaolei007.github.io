@@ -48,6 +48,7 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -89,7 +90,6 @@
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-        <li class="menu-item menu-item-playlist"><a href="/playlist/" rel="section"><i class="fa fa-music fa-fw"></i>歌单</a></li>
         <li class="menu-item menu-item-search"><a href="/search/" rel="section"><i class="fa fa-search fa-fw"></i>搜索</a></li>
   </ul>
 </nav>
@@ -109,6 +109,7 @@
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-overview-active">
+
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -117,6 +118,7 @@
           站点概览
         </li>
       </ul>
+
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
@@ -165,8 +167,27 @@
 
 
         </div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+                <!-- require MetingJS-->
+                <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+                <!--网易云-->
+                <meting-js
+                  server="netease"
+                  id="137678132"
+            	  type="playlist"
+            	  mini="false"
+                  fixed="false"
+                  list-folded="true"
+                  autoplay="false"
+                  volume="0.4"
+                  theme="#FADFA3"
+                  order="random"
+            	  loop="all"
+                  preload="auto"
+                  mutex="true">
+                </meting-js>
       </div>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=390 height=86 src="//music.163.com/outchain/player?type=2&id=480769653&auto=0&height=66"></iframe>
         <div class="back-to-top animated" role="button" aria-label="返回顶部">sh
           <i class="fa fa-arrow-up"></i>
           <span>0%</span>
