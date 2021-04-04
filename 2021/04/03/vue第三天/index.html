@@ -111,7 +111,6 @@
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -170,26 +169,29 @@
 
 
         </div>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-            <!-- require MetingJS-->
-            <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
-        	<!--网易云-->
-            <div class="aplayer"
-              data-id="4916164702"
-              data-server="netease"
-              data-type="playlist"
-              data-fixed="false"
-              data-autoplay="false"
-              data-list-folded="true"
-              data-mutex="true"
-              data-order="random"
-              data-loop="all"
-              data-volume="0.4"
-              data-theme="#FADFA3"
-              date-preload="auto" >
-            </div>
-        <div class="back-to-top animated" role="button" aria-label="返回顶部">sh
+      </div>
+
+<!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <!-- require MetingJS-->
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+	<!--网易云-->
+    <div class="aplayer"
+      data-id="137678132"
+      data-server="netease"
+      data-type="playlist"
+      data-fixed="false"
+      data-autoplay="false"
+      data-list-folded="true"
+      data-mutex="true"
+      data-order="random"
+      data-loop="all"
+      data-volume="0.4"
+      data-theme="#FADFA3"
+      date-preload="auto" >
+    </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
           <i class="fa fa-arrow-up"></i>
           <span>0%</span>
         </div>
@@ -427,7 +429,8 @@
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
 
   
 
@@ -437,11 +440,13 @@
 
 
   
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
+    <div class="pjax">
 
 
+    </div>
 </body>
 </html>
