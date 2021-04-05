@@ -2974,7 +2974,8 @@ ul.breadcrumb li:last-child {
   color: #fff;
 }
 .links-of-author-item a,
-.posts-collapse .post-content .post-title a {
+.posts-collapse .post-content .post-title a,
+.reply-wrapper {
   color: #fff;
 }
 body {
