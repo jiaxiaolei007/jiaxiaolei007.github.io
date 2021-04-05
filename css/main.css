@@ -2975,6 +2975,12 @@ ul.breadcrumb li:last-child {
 .reply-wrapper {
   color: #fff;
 }
+.post-copyright ul {
+  color: #673ab7;
+}
+.site-brand-container {
+  background: rgba(139,153,171,0.09);
+}
 body {
   background: url("../images/bg.jpg");
   background-repeat: no-repeat;
