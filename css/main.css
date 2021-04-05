@@ -2959,10 +2959,7 @@ ul.breadcrumb li:last-child {
 .post-meta,
 .post-meta span a,
 .tag-cloud-tags a,
-.category-list-link {
-  color: #f5f5f5;
-}
-.article .post-title .post-title-link span,
+.category-list-link，.article .post-title .post-title-link span,
 .nav-item .nav-level-1,
 .links-of-author-item {
   color: #f5f5f5;

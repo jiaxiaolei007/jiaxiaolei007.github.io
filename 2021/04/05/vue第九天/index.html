@@ -21,28 +21,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <meta name="hexo-config" content="{&quot;hostname&quot;:&quot;jiaxiaolei007.github.io&quot;,&quot;root&quot;:&quot;/&quot;,&quot;images&quot;:&quot;/images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:true,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:&quot;livere&quot;,&quot;storage&quot;:true,&quot;lazyload&quot;:true,&quot;nav&quot;:null,&quot;activeClass&quot;:&quot;livere&quot;},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}">
-<meta name="description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.">
+<meta name="description" content="Next8添加自定义背景next主题已经更新至版本8，之前的添加背景的教程已经不具有参考意义，因此，本人根据一些旧的教程以及各种博主的文章，总结了一下next8背景替换及透明度设置方法： next8主题下面有四种主题样式，我们可以在路径themes&#x2F;hexo-theme-next&#x2F;source&#x2F;css&#x2F;_schemes下看到这四个主题对应的文件夹。本人用的Gemini，在Gemini下面有一个in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue插值操作">
-<meta property="og:url" content="https://jiaxiaolei007.github.io/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/index.html">
+<meta property="og:title" content="Hexo博客搭建之背景替换及透明度设置">
+<meta property="og:url" content="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/index.html">
 <meta property="og:site_name" content="loveJay">
-<meta property="og:description" content="Mustache语法上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.">
+<meta property="og:description" content="Next8添加自定义背景next主题已经更新至版本8，之前的添加背景的教程已经不具有参考意义，因此，本人根据一些旧的教程以及各种博主的文章，总结了一下next8背景替换及透明度设置方法： next8主题下面有四种主题样式，我们可以在路径themes&#x2F;hexo-theme-next&#x2F;source&#x2F;css&#x2F;_schemes下看到这四个主题对应的文件夹。本人用的Gemini，在Gemini下面有一个in">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-03T07:48:47.000Z">
-<meta property="article:modified_time" content="2021-04-03T08:55:19.316Z">
+<meta property="og:image" content="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9.assets/image-20210405163218885.png">
+<meta property="article:published_time" content="2021-04-05T07:53:36.000Z">
+<meta property="article:modified_time" content="2021-04-05T08:33:55.518Z">
 <meta property="article:author" content="Jia">
-<meta property="article:tag" content="Vue">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9.assets/image-20210405163218885.png">
 
 
-<link rel="canonical" href="https://jiaxiaolei007.github.io/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/">
+<link rel="canonical" href="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/">
 
 
 
 <meta name="hexo-config-page" content="{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;}">
 <meta name="hexo-config-calendar" content="">
 <script data-pjax src="/js/load-config.js"></script>
-  <title>Vue插值操作 | loveJay</title>
+  <title>Hexo博客搭建之背景替换及透明度设置 | loveJay</title>
   
 
 
@@ -122,7 +124,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mustache%E8%AF%AD%E6%B3%95"><span class="nav-text">Mustache语法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-once%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">v-once指令的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-html%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">v-html指令的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-text%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">v-text指令的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-pre%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">v-pre指令的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v-cloak%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">v-cloak指令的使用</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Next8%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%83%8C%E6%99%AF"><span class="nav-text">Next8添加自定义背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next8%E9%80%8F%E6%98%8E%E5%BA%A6%E8%AE%BE%E7%BD%AE"><span class="nav-text">Next8透明度设置</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -222,7 +224,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jiaxiaolei007.github.io/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/">
+    <link itemprop="mainEntityOfPage" href="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
@@ -235,7 +237,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Vue插值操作
+          Hexo博客搭建之背景替换及透明度设置
         </h1>
 
         <div class="post-meta-container">
@@ -247,7 +249,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-03 15:48:47 / 修改时间：16:55:19" itemprop="dateCreated datePublished" datetime="2021-04-03T15:48:47+08:00">2021-04-03</time>
+      <time title="创建时间：2021-04-05 15:53:36 / 修改时间：16:33:55" itemprop="dateCreated datePublished" datetime="2021-04-05T15:53:36+08:00">2021-04-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -276,30 +278,32 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="Mustache语法"><a href="#Mustache语法" class="headerlink" title="Mustache语法"></a>Mustache语法</h1><p>上一节我们已经学习过了，可以通过Mustache语法将data中的文本数据插入到HTML.</p>
-<span id="more"></span>
+        <h1 id="Next8添加自定义背景"><a href="#Next8添加自定义背景" class="headerlink" title="Next8添加自定义背景"></a>Next8添加自定义背景</h1><p>next主题已经更新至版本8，之前的添加背景的教程已经不具有参考意义，因此，本人根据一些旧的教程以及各种博主的文章，总结了一下next8背景替换及透明度设置方法：</p>
+<p>next8主题下面有四种主题样式，我们可以在路径themes/hexo-theme-next/source/css/_schemes下看到这四个主题对应的文件夹。本人用的Gemini，在Gemini下面有一个index.styl文件，我们后面会用到这个文件。</p>
+<p>其次，在themes/hexo-theme-next/source目录下，有一个main.styl文件，我们仔细观察这个文件尾部可以发现，有个injects.style样式是在这个文件中引入的，因此我们后面可以通过相同的方法将替换背景的样式引入。</p>
+<p>好了，下面我们就开始干吧！</p>
+<p>1.在themes/hexo-theme-next/source/css下面创建styles.styl，在文件里面添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background: url(&quot;..&#x2F;images&#x2F;bg.jpg&quot;);&#x2F;&#x2F;设置背景</span><br><span class="line">  background-repeat: no-repeat;&#x2F;&#x2F; 设定背景图片非重复填充</span><br><span class="line">  background-attachment: fixed;&#x2F;&#x2F; 设置背景图片不随页面滚动</span><br><span class="line">  background-position: 50% 50%;&#x2F;&#x2F; 设置背景图片位置</span><br><span class="line">  background-size: cover&#x2F;&#x2F;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>同时，我们也可以像下面这样使用，并且数据是响应式的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;,李银河&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName+&#39; &#39;+lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;firstName&#125;&#125; &#123;&#123;lastName&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;counter*2&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">   const app&#x3D;new Vue(&#123;</span><br><span class="line">     el:&quot;#app&quot;,</span><br><span class="line">     data:&#123;</span><br><span class="line">       message:&quot;你好！&quot;,</span><br><span class="line">       firstName:&quot;Kobe&quot;,</span><br><span class="line">       lastName:&quot;bryant&quot;,</span><br><span class="line">       counter:100,</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>2.在themes/hexo-theme-next/source下，打开main.styl，在文件尾部引入添加背景样式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;styles.styl&quot;</span><br></pre></td></tr></table></figure>
 
-<h1 id="v-once指令的使用"><a href="#v-once指令的使用" class="headerlink" title="v-once指令的使用"></a>v-once指令的使用</h1><p>但是，在某些情况下，我们可能不希望界面随意的跟随着数据的改变而变化，这个时候我们就可以用vue的指令；</p>
-<p>该指令后面不需要跟任何表达式（v-for后面是需要跟表达式的），该指令表示元素和组件只会渲染一次，不会随着数据的改变而改变。</p>
-<p>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-once&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;)</span><br><span class="line"> &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>此时，在博客主目录下输入 hexo clean       hexo g      hexo d</p>
+<p>即可看到背景图已经死死印在博客下了！！</p>
+<h1 id="Next8透明度设置"><a href="#Next8透明度设置" class="headerlink" title="Next8透明度设置"></a>Next8透明度设置</h1><p>上面讲过index.styl这个文件，它是一个很重要的文件，打开index.styl后，我们在它的.main-inner中添加 background: rgba(255,255,255,.1); 进行背景透明度的设置,:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.main-inner &gt; &#123;</span><br><span class="line">  .sub-menu, .post-block, .tabs-comment, .comments, .pagination &#123;</span><br><span class="line">    background: var(--content-bg-color);</span><br><span class="line">    background: rgba(255,255,255,.1);</span><br><span class="line">    border-radius: $border-radius-inner;</span><br><span class="line">    box-shadow: $box-shadow-inner;</span><br><span class="line"></span><br><span class="line">    &amp;:not(:first-child):not(.sub-menu) &#123;</span><br><span class="line">      border-radius: $border-radius;</span><br><span class="line">      box-shadow: $box-shadow;</span><br><span class="line">      margin-top: $sidebar-offset;</span><br><span class="line"></span><br><span class="line">      +tablet() &#123;</span><br><span class="line">        margin-top: $content-tablet-padding;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      +mobile() &#123;</span><br><span class="line">        margin-top: $content-mobile-padding;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="v-html指令的使用"><a href="#v-html指令的使用" class="headerlink" title="v-html指令的使用"></a>v-html指令的使用</h1><p>某些情况下，我们从服务器请求到的数据本身就是一个HTML代码，如果我们直接通过Mustache来输出，会将HTML代码也跟着一起输出，但是我们需要的是按照HTML代码解析后显示相应的内容，这个时候我们可以用v-html。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;url&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-html&#x3D;&quot;url&quot;&gt;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      message: &quot;你好！&quot;,</span><br><span class="line">      url: &quot;&lt;a href&#x3D;http:&#x2F;&#x2F;www.baidu.com&gt;百度一下&lt;&#x2F;a&gt;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>添加后重新生成部署即可看到效果。</p>
+<p>在我们进行背景透明度设置后，有没有发现，虽然是好看了点，但是文字看不清楚，我们需要重新调整这些文字的颜色；</p>
+<p>另外侧边栏的head-inner部分以及site-author-name,.site-description等这些部分还是实色，我们还需要对这些地方进行透明度的设置；</p>
+<p>其次，除了这些地方，之外还有归档，标签，博客标题，站点导航等等这些细节地方的文字还需要做一些处理；</p>
+<p>通过不断的验证测试，本人已经完成了这些地方的修改,代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">  &#x2F;&#x2F;阅读全文按钮</span><br><span class="line">.post-button .btn&#123;</span><br><span class="line">  background :rgba(255,255,255,.5);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;侧边头像块</span><br><span class="line">.sidebar-inner&#123;</span><br><span class="line">  background :rgba(255,255,255,.1);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;字体颜色</span><br><span class="line">.main&#123;</span><br><span class="line">  color: whitesmoke</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;侧边作者信息块</span><br><span class="line">.header-inner&#123;</span><br><span class="line">  background :rgba(255,255,255,.1);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;侧边导航小li</span><br><span class="line">.menu-item a&#123;</span><br><span class="line">    color whitesmoke</span><br><span class="line">  &#125;</span><br><span class="line">.menu-item a:hover, .menu-item  a.menu-item-active &#123;</span><br><span class="line">  background: #919ead;</span><br><span class="line">  opacity :0.5</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;各个部分字体颜色设置</span><br><span class="line">.site-author-name,.site-description,.site-state-item-count,.site-state-item-name,.links-of-author-item .a&#123;</span><br><span class="line">  color whitesmoke</span><br><span class="line">&#125;</span><br><span class="line">.posts-expand .post-title-link,.post-meta,.post-meta span a,.tag-cloud-tags a,.category-list-link，.article .post-title .post-title-link span,.nav-item .nav-level-1,.links-of-author-item&#123;</span><br><span class="line">  color:whitesmoke</span><br><span class="line">&#125;</span><br><span class="line">.post-toc ol a,.sidebar-nav li.sidebar-nav-overview,.sidebar-nav li,.category-all-page .category-list-count&#123;</span><br><span class="line">  color:#FFFFFF</span><br><span class="line">&#125;</span><br><span class="line">.links-of-author-item a,.posts-collapse .post-content .post-title a,.reply-wrapper&#123;</span><br><span class="line">  color:#FFFFFF</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="v-text指令的使用"><a href="#v-text指令的使用" class="headerlink" title="v-text指令的使用"></a>v-text指令的使用</h1><p>v-text作用和Mustache一致，通常情况下，它接受一个String类型的字符串。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-text&#x3D;&quot;message&quot;&gt;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-
-<h1 id="v-pre指令的使用"><a href="#v-pre指令的使用" class="headerlink" title="v-pre指令的使用"></a>v-pre指令的使用</h1><p>v-pre用于跳过这个元素和它子元素的编译过程，用于显示原本的内容，比如下面的代码:</p>
-<p>第一个h2元素中的内容会被编译解析出来对应的内容；第二个h2元素会直接显示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">  &lt;h2 v-pre&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  const app&#x3D;new Vue(&#123;</span><br><span class="line">    el:&quot;#app&quot;,</span><br><span class="line">    data:&#123;</span><br><span class="line">      message:&quot;你好！&quot;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-
-<h1 id="v-cloak指令的使用"><a href="#v-cloak指令的使用" class="headerlink" title="v-cloak指令的使用"></a>v-cloak指令的使用</h1><p>某些情况下，浏览器可能会直接显示出未编译的Mustache语法，这个时候我们可以使用v-cloak在编译之前使页面显示为空白，代码如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    [v-cloak]&#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">  &lt;h2 v-cloak&gt;&#123;&#123;message&#125;&#125;&lt;&#x2F;h2&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;..&#x2F;js&#x2F;vue.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  &#x2F;&#x2F;在vue解析之前，h2中有一个属性v-cloak</span><br><span class="line">  &#x2F;&#x2F;在vue解析之后，h2中没有属性v-cloak</span><br><span class="line">  setTimeout(function ()&#123;</span><br><span class="line">    const app&#x3D;new Vue(&#123;</span><br><span class="line">      el:&quot;#app&quot;,</span><br><span class="line">      data:&#123;</span><br><span class="line">        message:&quot;你好！&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,1000)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-
+<p>效果图如下：</p>
+<p><img src="vue%E7%AC%AC%E4%B9%9D%E5%A4%A9.assets/image-20210405163218885.png" alt="image-20210405163218885"></p>
+<p>也可以输入<a target="_blank" rel="noopener" href="https://jiaxiaolei007.github.io(本人博客地址)自行查看./">https://jiaxiaolei007.github.io（本人博客地址）自行查看。</a></p>
+<p>这些样式如果不满意，可以自行打开浏览器元素进行测试然后设置。其次，这些代码都是在index.styl文件中进行添加的。</p>
 
     </div>
 
@@ -317,7 +321,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://jiaxiaolei007.github.io/2021/04/03/Vue%E7%AC%AC%E4%BA%8C%E5%A4%A9/" title="Vue插值操作">https://jiaxiaolei007.github.io/2021/04/03/Vue第二天/</a>
+      <a href="https://jiaxiaolei007.github.io/2021/04/05/vue%E7%AC%AC%E4%B9%9D%E5%A4%A9/" title="Hexo博客搭建之背景替换及透明度设置">https://jiaxiaolei007.github.io/2021/04/05/vue第九天/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -343,7 +347,7 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Vue/" rel="tag"># Vue</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           </div>
 
         
@@ -351,14 +355,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/03/vue%E7%AC%AC%E4%B8%80%E5%A4%A9/" rel="prev" title="Vue初体验">
-                  <i class="fa fa-chevron-left"></i> Vue初体验
+                <a href="/2021/04/05/vue%E7%AC%AC%E5%85%AB%E5%A4%A9/" rel="prev" title="Vue条件判断">
+                  <i class="fa fa-chevron-left"></i> Vue条件判断
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/04/03/vue%E7%AC%AC%E4%B8%89%E5%A4%A9/" rel="next" title="Vue绑定操作">
-                  Vue绑定操作 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -433,7 +434,7 @@
 <script>
 NexT.utils.loadComments('#lv-container', () => {
   window.livereOptions = {
-    refer: "2021/04/03/Vue第二天/"
+    refer: "2021/04/05/vue第九天/"
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
