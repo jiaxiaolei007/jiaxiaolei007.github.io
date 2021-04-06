@@ -2981,6 +2981,13 @@ ul.breadcrumb li:last-child {
 .site-brand-container {
   background: rgba(139,153,171,0.09);
 }
+#container .reply-content,
+#container .reply-history span,
+#container .reply-btn-group .left button span,
+#container .reply-count .sort .sort-btn span {
+  color: #f5f5f5;
+  z-index: 99999;
+}
 body {
   background: url("../images/bg.jpg");
   background-repeat: no-repeat;
