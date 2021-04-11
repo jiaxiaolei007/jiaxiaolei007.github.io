@@ -2989,7 +2989,7 @@ ul.breadcrumb li:last-child {
   z-index: 99999;
 }
 body {
-  background: url("../images/bg.jpg");
+  background: url("../images/bg.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
