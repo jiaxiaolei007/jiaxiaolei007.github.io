@@ -2986,10 +2986,12 @@ ul.breadcrumb li:last-child {
 #container .reply-btn-group .left button span,
 #container .reply-count .sort .sort-btn span {
   color: #f5f5f5;
-  z-index: 99999;
+}
+a {
+  color: #f5f5f5;
 }
 body {
-  background: url("../images/bg.jpeg");
+  background: url("../images/bg2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
